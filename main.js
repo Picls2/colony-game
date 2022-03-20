@@ -236,7 +236,7 @@ farmerUpgradeButton.onclick = () => {
     if(money >= farmerCost){
         money -= farmerCost;
         farmerCost *= 1.5;
-        farmerSpeed *= 1.2;
+        wheatMultiplier *= 1.2;
     } else {
         alert("Insufficient Funds")
     }
@@ -246,7 +246,7 @@ stoneUpgradeButton.onclick = () => {
     if(money >= stoneMinerCost){
         money -= stoneMinerCost;
         stoneMinerCost *= 1.5;
-        stoneMinerSpeed *= 1.5;
+        stoneMultiplier *= 1.5;
     } else {
         alert("Insufficient Funds")
     }
@@ -256,7 +256,7 @@ ironUpgradeButton.onclick = () => {
     if(money >= ironMinerCost){
         money -= ironMinerCost;
         ironMinerCost *= 1.5;
-        ironMinerSpeed *= 2;
+        ironMultiplier *= 2;
     } else {
         alert("Insufficient Funds")
     }
