@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colony Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Colony Game</h1>
+        <div id="upgradeInfo">
+            Stone unlocked at 50 colonists 
+            <br /> 
+            Iron unlocked at 100 colonists
+        </div>
+        <div id="newsContainer">
+            <h2 id="newsHeadline">Headline</h2>
+            <h3 id="newsInfo">Add. Info</h3>
+        </div>
+        <div id="upgradeContainer">
+            <h2 id="upgradeText">Upgrades</h2>
+            <div id="soldierUpgrade">Soldier thing ting: <br /> $1000</div>
+            <button id="soldierUpgradeButton" class="sellButton" style="margin: 0;">Buy</button>
+            <div id="farmerUpgrade">Farmer Speed +20%: <br /> $1000</div>
+            <button id="farmerUpgradeButton" class="sellButton" style="margin: 0;">Buy</button>
+            <div id="stoneUpgrade">Stone Miner Speed +50%: $5000</div>
+            <button id="stoneUpgradeButton" class="sellButton" style="margin: 0;" disabled>Buy</button>
+            <div id="ironUpgrade">Iron Miner Speed +100%: <br /> $10000</div>
+            <button id="ironUpgradeButton" class="sellButton" style="margin: 0;" disabled>Buy</button>
+        </div>
+        <div id="resourcesContainer">
+            <h2 id="upgradeText">Resources</h2>
+            <p id="money">Money: 0</p>
+            <p id="wheat">Wheat: 0</p>
+            <p id="stone">Stone: 0</p>
+            <p id="iron">Iron: 0</p>
+        </div>
+        <div id="employmentContainerBig">
+            <h2 id="employmentText">Employment</h2>
+            <div id="employmentContainer">
+                    <p id="totalColonists">Total Colonists: 10</p>
+                <div id="unemployedContainer" class="employContainer">
+                    <p id="unemployed">Unemployed: 0</p>
+                </div>
+                <div id="soldiersContainer" class="employContainer">
+                    <p id="soldiers">Soldiers: 0</p>
+                    <button id="soldierPlus" class="employButton">+</button>
+                    <button id="soldierMinus" class="employButton">-</button>
+                </div>
+                <div id="farmersContainer" class="employContainer">
+                    <p id="farmers">Farmers: 0</p>
+                    <button id="farmerPlus" class="employButton">+</button>
+                    <button id="farmerMinus" class="employButton">-</button>
+                </div>
+                <div id="stoneMinerContainer" class="employContainer">
+                    <p id="stoneMiners">Stone Miners: 0</p>
+                    <button id="stoneMinerPlus" class="employButton" disabled>+</button>
+                    <button id="stoneMinerMinus" class="employButton" disabled>-</button>
+                </div>
+                <div id="ironMinerContainer" class="employContainer">
+                    <p id="ironMiners">Iron Miners: 0</p>
+                    <button id="ironMinerPlus" class="employButton" disabled>+</button>
+                    <button id="ironMinerMinus" class="employButton"disabled>-</button>
+                </div>
+            </div>
+        </div>
+        <div id="statsContainer">
+            <h2 id="statsText">Stats</h2>
+            <p id="soldierDamage">Soldier Damage: 3</p>
+            <p id="farmerSpeed">Farmer Speed: 0.5</p>
+            <p id="stoneMinerSpeed">Stone Miner Speed: 0.2</p>
+            <p id="ironMinerSpeed">Iron Miner Speed: 0.1</p>
+        </div>
+        <div id="marketContainer">
+            <h2 id="marketText">Market</h2>
+             <div id="wheatSellContainer" class="employContainer">
+                 <p>Wheat</p>
+                 <input type="number" placeholder="Amount" class="sellAmount" id="wheatSell">
+                 <button id="wheatSellButton" class="sellButton">Sell</button>
+                 <p>$2</p>
+             </div>
+             <div id="stoneSellContainer" class="employContainer">
+                <p>Stone</p>
+                <input type="number" placeholder="Amount" class="sellAmount" id="stoneSell" disabled>
+                <button id="stoneSellButton" class="sellButton" disabled>Sell</button>
+                <p>$5</p>
+            </div>
+            <div id="ironSellContainer" class="employContainer">
+                <p>Iron</p>
+                <input type="number" placeholder="Amount" class="sellAmount" id="ironSell" disabled>
+                <button id="ironSellButton" class="sellButton" disabled>Sell</button>
+                <p>$10</p>
+            </div>
+            <div id="colonistBuyContainer" class="employContainer">
+                <p>Colonists</p>
+                <input type="number" placeholder="Amount" class="sellAmount" id="colonistBuy">
+                <button id="colonistBuyButton" class="sellButton">Buy</button>
+                <p>$100</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

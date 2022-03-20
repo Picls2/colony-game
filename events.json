@@ -1,0 +1,32 @@
+[
+    {
+       "eventName": "famine",
+       "headline": "Famine Strikes!",
+       "subline": "Half of all farmer's lands lose fertility and are forced off their land"
+    },
+    {
+        "eventName": "war1",
+        "headline": "War in Europe!",
+        "subline": "Entire army is decimated! Country defenceless!"
+    },
+    {
+        "eventName": "war2",
+        "headline": "War!",
+        "subline": "Following an attack by the USA half of the army is left dead"
+    }, 
+    {
+        "eventName": "mine1",
+        "headline": "Explosion in the Iron Mines!",
+        "subline": "An explosion in the iron mines leaves 20% of miners dead"
+    },
+    {
+        "eventName": "mine2",
+        "headline": "Cave In at the Stone Mines!",
+        "subline": "An unexpected cave in at the Stone Mines leaves 30% of workers trapped forever"
+    },
+    {
+        "eventName": "money",
+        "headline": "Economic Prosperity!",
+        "subline": "Gain $50 for every colonist!"
+    }
+]

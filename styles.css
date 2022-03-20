@@ -1,0 +1,172 @@
+body {
+    overflow: hidden;
+    display: grid;
+    align-content: stretch;
+    column-gap: 5%;
+    row-gap: 4%;
+    grid-template-rows: [row1-start] 10% [row2-start] 20% [row3-start] 25% [row4-start] 20% [row5-start] auto [end];
+    grid-template-columns: [first] 20% [line2] 15% [line3] 30% [line4] auto [last-line];
+    background-color: #292826;
+    color: #ffc0cb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+
+h1 {
+    grid-column: 2 / span 2;
+    justify-self: center;
+    grid-row: 1;
+}
+
+#upgradeInfo {
+    grid-column: 4;
+    justify-self: center;
+    align-self: center;
+    font-size: large;
+}
+
+.employButton {
+    height: 2em;
+    width: 2em;
+    margin: 1.25em 0em 0em 0.5em;
+    background-color: #add8e6;
+    border-width: 1px;
+    border-color: #292826;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+button:hover:enabled {
+    background-color: #8fb5c2;
+}
+
+button:active { 
+    border-color: white;
+}
+
+#newsContainer {
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    justify-self: center;
+    align-items: center;
+}
+
+#statsContainer {
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    grid-column: 4;
+    grid-row: 3;
+    justify-self: center;
+    align-items: center;
+}
+
+#upgradeContainer {
+    grid-column: 1;
+    grid-row: 3;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: [first] 85% [line2] auto [last-line];
+    justify-self: center;
+    display: grid;
+    font-size: larger;
+    align-items: center;
+}
+
+#upgradeText{
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+
+
+#employmentContainerBig {
+    grid-column: 3;
+    grid-row: 3;
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+#employmentContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0.3rem;
+    align-content: space-around;
+    column-gap: 4rem;
+
+}
+
+#resourcesContainer {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employContainer {
+    display: flex;
+}
+
+#marketContainer {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    font-size: larger;
+    flex-direction: row;
+    align-items: baseline;
+    justify-items: center;
+    align-content: space-around;
+    margin: 0 0 0 5%;
+}
+
+#marketText {
+    grid-column: 1 / span 4;
+}
+
+.sellAmount {
+    height: 2em;
+    width: 5em;
+    margin: 1rem 1rem 0 1rem;
+    border-width: 2px;
+    border-color: pink;
+    border-radius: 5em;
+    background-color: #add8e6;
+    color: black;
+    border-style: solid;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 4px;
+}
+
+.sellButton {
+    height: 3em;
+    width: 3em;
+    border: 1px solid #292826;
+    background-color: lightblue;
+    border-radius: 50%;
+    margin: 0 1em 0 0;
+    align-self: center;
+    justify-self: center;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+input:disabled {
+     cursor: not-allowed;
+}
